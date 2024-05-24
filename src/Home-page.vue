@@ -5,6 +5,7 @@
       <img src="./images/ricknavtext.png">
       <div class="ml-80 mt-6 flex gap-12">
         <span @click="scrollToSection('home')" class="text-2xl text-green-500 cursor-pointer">Home</span>
+        <span @click="scrollToSection('about')" class="text-2xl text-green-500 cursor-pointer">About</span>
         <span @click="scrollToSection('episodes')" class="ml-2 text-2xl text-green-500 cursor-pointer">Episode</span>
         <span @click="scrollToSection('characters')" class="ml-2 text-2xl text-green-500 cursor-pointer">Character</span>
         <span @click="scrollToSection('locations')" class="mr-2 text-2xl text-green-500 cursor-pointer">Location</span>
@@ -94,13 +95,14 @@ const router = useRouter();
 
 // Define refs for the sections
 const home = ref(null);
+const about = ref(null);
 const episodes = ref(null);
 const characters = ref(null);
 const locations = ref(null);
 
 // Method to scroll to a section
 const scrollToSection = (section) => {
-  const sectionRefs = { home, episodes, characters, locations };
+  const sectionRefs = { home,about, episodes, characters, locations };
   const element = sectionRefs[section].value;
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
