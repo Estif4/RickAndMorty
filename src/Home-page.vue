@@ -38,7 +38,7 @@
           with thought-provoking storylines, "Rick and Morty" has captivated audiences with its unique blend of absurdity and intelligence.
         </p>
       </div>
-      <img class="ml-8" src="./images/line 1.png">
+      
       <div class="mt-32 ml-12 text-4xl text-green-600">
         <img class="mb-12" src="./images/genre.png">
         <img class="mb-12" src="./images/imdbrating.png">
