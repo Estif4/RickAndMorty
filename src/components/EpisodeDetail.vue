@@ -60,7 +60,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref, onMounted, watch } from 'vue';
+import {  ref, onMounted, watch } from 'vue';
 import { useQuery } from '@vue/apollo-composable';
 import gql from 'graphql-tag';
 
