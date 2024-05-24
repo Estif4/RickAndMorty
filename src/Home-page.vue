@@ -70,7 +70,7 @@
       <img class="hover:h-9 h-8" src="./images/facebook.png">
       <img class="hover:h-9 h-8" src="./images/instagram.png">
       <a href="https://t.me/Ek0090"><img class="hover:h-9 h-8" src="./images/telegram.png"></a>
-      <a href="https://www.figma.com/proto/zCjFHMwSxIF2VKOG5AmZ8q/Untitled?node-id=2-2&t=4pVmyKU9H26XNXMm-0&scaling=min-zoom&page-id=0%3A1">
+      <a href="https://www.figma.com/proto/3VvuaYs3ZG1HFQ1NpsEzLg/Home-page-of-Rick-and-morty?node-id=1-2">
         <div class="flex"><div><img class=" w-6 inline" src="./images/figma.png"></div>
         <div><span class="text-blue-600 text-3xl  mb-12 ml-2 hover:text-blue-500 text-white   ">Figma Design</span></div>
       </div></a>

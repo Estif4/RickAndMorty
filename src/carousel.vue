@@ -2,7 +2,7 @@
   <Carousel :itemsToShow="3">
     <Slide v-for="slide in imageList" :key="slide">
       <!-- <div class="carousel__item">{{ slide }}</div> -->
-      <img :src="`src/images/${slide}`" alt="" class="carousel__item" />
+      <img :src="`${slide}`" alt="" class="carousel__item" />
     </Slide>
 
     <template #addons>
@@ -18,14 +18,18 @@ import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 
 import 'vue3-carousel/dist/carousel.css';
 const imageList = ref([
-  'first1.jpg',
-  'middle.jpg',
-  'third.jpg',
-  'fourth.jpg',
-  'five.jpg',
-  'six.jpg',
-  'seven.jpg',
-  'eight.jpg'
+  'https://vid.alarabiya.net/images/2023/01/26/baeddbc6-2543-4526-984d-cab72533c28e/baeddbc6-2543-4526-984d-cab72533c28e.jpg?width=801&format=jpg',
+  'https://i.pinimg.com/originals/a7/88/7b/a7887b5c3f3aa1ba0fcd92a822d5bfee.jpg',
+  'https://mrwallpaper.com/images/thumbnail/neon-space-rick-and-morty-iphone-r4qxuelh0ndqnpxm.webp',
+  'https://i.pinimg.com/474x/58/70/37/5870377f6dc0e6cd89a7b7495b422689.jpg',
+  'https://i.pinimg.com/564x/dc/3f/62/dc3f624d05a7380ffc0f780b104d45cc.jpg',
+  'https://i.pinimg.com/736x/75/0c/d4/750cd40ec872ff53643936fd49cbdd98.jpg',
+  'https://i.pinimg.com/564x/fc/35/f4/fc35f4c81a7576ed6ec21868532746d3.jpg',
+  'https://i.pinimg.com/564x/88/a7/c1/88a7c11f9bda6ccb127f6d9e5d7c3a98.jpg',
+  'https://i.pinimg.com/736x/11/17/8a/11178aa40cd0f6431550ac3756e62b78.jpg',
+  'https://i.pinimg.com/564x/de/ab/57/deab57e478ebf1cd235eae8d81007275.jpg',
+  'https://i.pinimg.com/564x/19/09/8d/19098de1b4eb533cd9c3431321139daf.jpg',
+  'https://i.pinimg.com/564x/db/61/3a/db613a3179d723164189860d0381d1bd.jpg'
 ]);
 
 defineComponent({
