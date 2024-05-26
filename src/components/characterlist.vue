@@ -9,13 +9,13 @@
         <div v-if="error" class="text-center text-red-500">Error: {{ error.message }}</div>
         <div v-if="characters.length > 0">
           <!-- Grid layout for characters -->
-          <div class="grid grid-cols-4 gap-4">
+          <div class="ml-32 grid grid-cols-4 gap-8">
             <div v-for="character in characters" :key="character.id" class="hover:opacity-75 transition duration-300 shadow-md character-card cursor-pointer items-center">
               <!-- Character card with router-link -->
               <router-link :to="{ name: 'CharacterDetail', params: { id: character.id } }" class="block">
-                <img class="w-72 h-96" :src="character.image" :alt="character.name" />
-                <div class="character-info text-center mb-4 bg-black w-72 h-8">
-                  <p class="font-serif text-2xl text-white">{{ character.name }}</p>
+                <img class="w-64 h-64" :src="character.image" :alt="character.name" />
+                <div class="character-info  text-center mb-4 bg-black w-64 h-8">
+                  <p class="font-serif text-xl text-white">{{ character.name }}</p>
                 </div>
               </router-link>
             </div>
