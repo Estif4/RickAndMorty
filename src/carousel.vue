@@ -54,8 +54,8 @@ defineComponent({
 }
 
 .carousel__item {
-  height: 770px;
-  width: 450px;
+  height: 600px;
+  width: 500px;
   color: white;
 
   display: flex;
