@@ -52,7 +52,7 @@
     <div class="bg-white h-auto sm:h-32 py-4 sm:py-0">
       <p class="text-2xl sm:text-3xl italic pt-8 font-serif text-center">Episode Guide</p>
     </div>
-    <episode class="fade-in"></episode>
+    <episode></episode>
     <div class="flex flex-col sm:flex-row bg-gray-300 w-full h-auto sm:h-24 py-4 sm:py-0 fade-in" ref="characters">
       <img class="ml-8 sm:ml-40" src="./images/Rectangle 6.png">
       <span class="ml-8 mt-4 sm:mt-8 italic font-serif text-black text-3xl sm:text-5xl">Characters</span>
