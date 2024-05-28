@@ -3,7 +3,7 @@
     <div class="nav flex flex-row bg-black w-full h-24 fixed top-0 z-10">
       <img class="w-16 h-16" src="./images/video.png">
       <img src="./images/ricknavtext.png" class="hidden sm:hidden md:hidden lg:block">
-      <div class="ml-4 sm:ml-20 lg:ml-80 mt-6 flex gap-4 sm:gap-12 lg:gap-12">
+      <div class="ml-4 sm:ml-20 lg:ml-40 mt-6 flex gap-4 sm:gap-12 gap:10">
         <span @click="scrollToSection('home')" class="text-lg sm:text-2xl text-green-500 cursor-pointer">Home</span>
         <span @click="scrollToSection('about')" class="text-lg sm:text-2xl text-green-500 cursor-pointer">About</span>
         <span @click="scrollToSection('episodes')" class="ml-2 text-lg sm:text-2xl text-green-500 cursor-pointer">Episode</span>
@@ -14,7 +14,7 @@
     </div>
 
     <div ref="home" class="mt-24">
-      <img class="firstimg w-full h-96" src="./images/first.jpg">
+      <img class="firstimg w-full h-80" src="./images/first.jpg">
     </div>
     <div>
       <carousel></carousel>
