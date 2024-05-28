@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <div class="bg-gradient-to-tr from-green-700 via-yellow-500 to-red-700 app-container">
     <header>
       <h1 class="text-4xl font-bold text-center my-8">Rick and Morty Episodes</h1>
     </header>
@@ -18,10 +18,15 @@
         <div v-if="filteredData.length > 0">
           <div v-for="season in filteredData" :key="season.season" class="grid grid-cols-4 gap-4">
             <router-link v-for="episode in season.episodes" :key="episode.id" :to="{ name: 'EpisodeDetail', params: { id: episode.id }}">
-              <div class="hover:opacity-75 episode-card cursor-pointer items-center">
+              <div class="hover:opacity-75 episode-card cursor-pointer items-center relative">
                 <img :src="getEpisodeImage(episode.id)" :alt="episode.name" class="w-72 h-96" />
                 <div class="episode-info text-center mb-4 bg-orange-100 w-72 h-16">
                   <p class="font-serif text-2xl text-blue-600">S{{ season.season }} E{{ episode.episode.split('E')[1] }}: <span class="text-black">{{ episode.name }}</span></p>
+                </div>
+                <div class="video-icon absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M8 5v10l7-5-7-5z" />
+                  </svg>
                 </div>
               </div>
             </router-link>
@@ -142,9 +147,13 @@ const displaySeason = season => {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   overflow: hidden;
+  position: relative;
 }
 
 .episode-info {
   padding: 0.5rem;
 }
+
+
+
 </style>

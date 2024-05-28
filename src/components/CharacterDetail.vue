@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div v-if="loading">Loading...</div>
+  <div v-if="loading" class="bg-yellow-300 h-80 text-white text-6xl relative top-10">Loading...</div>
   <div v-if="error">Error: {{ error.message }}</div>
   <div v-if="data">
     <div class="flex relative top-16 bg-yellow-100">
@@ -41,7 +41,7 @@
     </div>
     <div class="mt-32 back">
       <h3 class="ml-96 pl-32 mb-16 text-5xl text-green-500">Episodes participated in</h3>
-      <ul class="ml-64 grid grid-cols-2 gap-12">
+      <ul class="ml-64 grid grid-cols-2 gap-12 overflow-y-auto overflow">
         <li v-for="episode in data.character.episode" :key="episode.id">
           <p class="text-pink-700 text-4xl">{{ episode.name }}</p>
           <p class="text-2xl text-white"><strong>Air Date:</strong> {{ episode.air_date }}</p>
@@ -156,5 +156,8 @@ onBeforeUnmount(() => {
 .img {
   width: 600px;
   height: 600px;
+}
+.overflow{
+  max-height: 800px;
 }
 </style>
